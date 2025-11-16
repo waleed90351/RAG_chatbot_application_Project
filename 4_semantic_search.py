@@ -94,7 +94,7 @@ if st.button("Submit query"):
         response = client.models.generate_content(
             model="gemini-2.5-flash-lite",
             contents=prompt
-        )
+        )   
         st.title("Answer:")
         st.write(response.text)
 
